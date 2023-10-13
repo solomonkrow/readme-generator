@@ -15,11 +15,11 @@ const promptUser = () => {
             name: 'description',
             message: 'Provide a short description of the project',
             validate: (value) => value ? true : 'Input value required',
-        },
-        {
+        },   
+        { 
             type: 'input',
             name: 'installation',
-            message: 'What steps are required to use project?',
+            message: 'What steps are required to use project?', 
         },
         {
             type: 'input',
@@ -60,6 +60,11 @@ const promptUser = () => {
             message: 'What is your email address?',
             validate: (value) => value ? true : 'Input value required',
         },
+        {
+            type: 'input',
+            name: 'linkedin',
+            message: 'What is your LinkedIn username?',
+        },
     ])
     /* .then(({
         title,
@@ -80,7 +85,7 @@ const promptUser = () => {
 }; 
 
 function writeToFile(fileName, data) {
-    fs.writeFile(`./${fileName.toLowerCase().split(' ').join('')}.md`, data, (err)=>{
+    fs.writeFile(`./${fileName.split(' ').join('')}.md`, data, (err)=>{
         if(err){console.log(err);}
         console.log('Your README has been generated');
     })

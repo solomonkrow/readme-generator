@@ -54,8 +54,12 @@ const generateMarkdown = (data) => {
 
   ## Feedback / Contact
 
+  If you have any questions or feedback can reach me at Github, email or LinkedIn down below
+
   * Github : [${data.github}](https://www.github.com/${data.github})
   * E-mail : ${data.email}
+  * LinkedIn : [${data.linkedin}](https://www.linkedin.com/in/${data.linkedin})
+
   
 `;
 }
