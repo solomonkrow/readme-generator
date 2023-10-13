@@ -32,9 +32,17 @@ const promptUser = () => {
             message: 'List any collaborators / tutorials / 3rd party assets',
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'badges',
             message: 'Select any badges',
+            choices:[
+                '![Static Badge](https://img.shields.io/badge/javascript-yellow)',
+                '![Static Badge](https://img.shields.io/badge/css-blue)',
+                '![Static Badge](https://img.shields.io/badge/hrml-orange)',
+                '![Static Badge](https://img.shields.io/badge/javascript-node.js-green)',
+                '![Static Badge](https://img.shields.io/badge/css-bootstrap-purple)',
+                '![Static Badge](https://img.shields.io/badge/SMU%20EDx%20bootcamp-red)',
+            ],
         },
         {
             type: 'input',
